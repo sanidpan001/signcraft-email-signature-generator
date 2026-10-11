@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SignCraft — Free Email Signature Generator: HTML Signatures for Gmail & Outlook</title>
+<meta name="description" content="Free email signature generator. Fill your details, pick a template, copy the signature or the HTML, and install it in Gmail or Outlook with step-by-step guides for each template.">
+<link rel="canonical" href="https://signcraft.fixoraa.tech/">
+<meta property="og:title" content="SignCraft — Free Email Signature Generator: HTML Signatures for Gmail & Outlook">
+<meta property="og:description" content="Free email signature generator. Fill your details, pick a template, copy the signature or the HTML, and install it in Gmail or Outlook with step-by-step guides for each template.">
+<meta property="og:url" content="https://signcraft.fixoraa.tech/">
+<meta property="og:type" content="website">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root{--pri:#1E40AF;--acc:#F97316;--bgc:#EFF6FF}
+body{background:var(--bgc);font-family:'Segoe UI',system-ui,sans-serif}
+.pri{background:var(--pri)} .prit{color:var(--pri)} .acct{color:var(--acc)}
+.btn{background:var(--pri);color:#fff;padding:.6rem 1.2rem;border-radius:.6rem;font-weight:600;cursor:pointer;border:none}
+.btn:hover{opacity:.9} .btn2{background:var(--acc);color:#111;padding:.6rem 1.2rem;border-radius:.6rem;font-weight:600;cursor:pointer;border:none}
+input,select,textarea{border:1.5px solid #cbd5e1;border-radius:.55rem;padding:.55rem .7rem;width:100%;background:#fff;color:#0f172a}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--pri);border-color:transparent}
+label{font-size:.83rem;font-weight:600;display:block;margin-bottom:.3rem}
+.card{background:#fff;border-radius:1rem;box-shadow:0 8px 30px rgba(15,23,42,.08);padding:1.4rem}
+article p{margin:.7rem 0;line-height:1.75;color:#334155}
+article h2{font-size:1.45rem;font-weight:800;margin:1.6rem 0 .4rem;color:#0f172a}
+.faq{background:#fff;border-radius:.7rem;padding:.9rem 1.1rem;margin:.55rem 0;box-shadow:0 2px 10px rgba(15,23,42,.05)}
+.faq summary{font-weight:700;cursor:pointer}
+table.dt{width:100%;border-collapse:collapse} table.dt th,table.dt td{border:1px solid #e2e8f0;padding:.45rem .6rem;text-align:left;font-size:.9rem}
+table.dt th{background:#f1f5f9}
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "SignCraft", "url": "https://signcraft.fixoraa.tech/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Free email signature generator. Fill your details, pick a template, copy the signature or the HTML, and install it in Gmail or Outlook with step-by-step guides for each template."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I add the signature to Gmail?", "acceptedAnswer": {"@type": "Answer", "text": "Click 'Copy signature', then in Gmail: Settings \u2192 See all settings \u2192 General \u2192 Signature \u2192 Create new \u2192 paste \u2192 assign as default for new emails and replies \u2192 Save Changes at the bottom of the page."}}, {"@type": "Question", "name": "How do I add it to Outlook?", "acceptedAnswer": {"@type": "Answer", "text": "On the web: Settings \u2192 Mail \u2192 Compose and reply \u2192 paste into the signature editor and set defaults. In desktop Outlook: File \u2192 Options \u2192 Mail \u2192 Signatures \u2192 New \u2192 paste \u2192 set as default \u2192 OK."}}, {"@type": "Question", "name": "Why does the generator use HTML tables?", "acceptedAnswer": {"@type": "Answer", "text": "Email clients strip most modern CSS; table-based layout with inline styles is the only approach that renders consistently across Gmail, Outlook (including old desktop versions) and mobile mail apps."}}, {"@type": "Question", "name": "Should my signature include a logo or photo?", "acceptedAnswer": {"@type": "Answer", "text": "Text signatures load instantly, never arrive as mystery attachments, work with images blocked, and stay copyable and accessible. If branding demands a logo, keep it small, hosted and linked \u2014 but text-only is the reliable default."}}, {"@type": "Question", "name": "Can I copy the raw HTML instead?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 'Copy HTML code' gives you the markup for mail tools, CRMs and clients that accept signature code directly, or for handing to your IT team."}}, {"@type": "Question", "name": "Do I need to set the signature on my phone too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 each app keeps its own signature setting and they do not sync. Replace the default 'Sent from my phone' line in your mail app's settings with the same signature for a consistent impression."}}]}</script>
+</head>
+<body id="top">
+<header class="sticky top-0 z-40 shadow-md" style="background:#172554">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-3 flex items-center justify-between">
+    <a href="#top" class="text-xl font-extrabold tracking-tight" style="color:#EFF6FF">✉ SignCraft</a>
+    <nav class="flex gap-5 text-sm font-semibold" style="color:#EFF6FF">
+      <a href="#top" class="hover:underline">Home</a>
+      <a href="https://fixoraa.tech" class="hover:underline">More Tools</a>
+    </nav>
+  </div>
+</header>
+<div class="no-print mx-auto max-w-6xl px-4 sm:px-6 pt-4" role="complementary" aria-label="Advertisement">
+  <div class="mx-auto text-center" style="max-width:728px">
+    <span class="block text-[10px] tracking-[0.18em] uppercase text-slate-400 mb-1.5">Advertisement</span>
+    <div class="flex justify-center overflow-hidden">
+      <div class="origin-top scale-[0.44] sm:scale-100 shrink-0">
+        <script>
+          atOptions = { 'key' : '4e68ac77881c17fe128a46565d9a4e8c', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+        </script>
+        <script src="https://www.highrevenueformat.com/4e68ac77881c17fe128a46565d9a4e8c/invoke.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+<main class="mx-auto max-w-6xl px-4 sm:px-6 py-8">
+  <div class="text-center mb-6">
+    <h1 class="text-3xl sm:text-4xl font-extrabold" style="color:#0f172a">Email Signature Generator</h1>
+    <p class="mt-2 text-slate-600 max-w-2xl mx-auto">A good signature makes every email look like it came from a company, not a laptop. Fill the form, choose a template, preview it live — then copy it straight into Gmail or Outlook with the install steps included.</p>
+    <span class="inline-block mt-3 px-3 py-1 rounded-full text-xs font-bold text-white pri">✓ Unlimited Free Usage — No Signup, No Watermark</span>
+  </div>
+  <div class="grid md:grid-cols-5 gap-6">
+  <div class="card md:col-span-2 space-y-3">
+    <div><label>Full name</label><input id="nm" value="Asha Verma" oninput="render()"></div>
+    <div><label>Job title</label><input id="ti" value="Product Designer" oninput="render()"></div>
+    <div><label>Company</label><input id="co" value="Studio North" oninput="render()"></div>
+    <div><label>Email</label><input id="em" value="asha@studionorth.example" oninput="render()"></div>
+    <div><label>Phone</label><input id="ph" value="+91 98200 00000" oninput="render()"></div>
+    <div><label>Website</label><input id="wb" value="studionorth.example" oninput="render()"></div>
+    <div><label>Template</label><select id="tpl" onchange="render()"><option value="modern">Modern — colour bar</option><option value="classic">Classic — serif & rule</option><option value="minimal">Minimal — text only</option></select></div>
+    <button class="btn w-full" onclick="copySig()">📋 Copy signature (paste into Gmail)</button>
+    <button class="btn2 w-full" onclick="copyHtml()">Copy HTML code</button>
+    <div id="msg" class="text-sm font-semibold prit"></div>
+  </div>
+  <div class="md:col-span-3 space-y-4">
+    <div class="card"><div class="text-xs font-bold mb-2">LIVE PREVIEW</div><div id="prev"></div></div>
+    <div class="card"><h3 class="font-bold">Install in Gmail</h3><p class="text-sm text-slate-600">Settings (gear) → See all settings → General → Signature → Create new → click in the signature box and paste (Ctrl/Cmd+V) → set it as the default for new emails and replies → Save Changes at the bottom.</p>
+    <h3 class="font-bold mt-3">Install in Outlook</h3><p class="text-sm text-slate-600">Settings → Mail → Compose and reply → Email signature → paste into the editor → choose it as the default for new messages and replies → Save. In desktop Outlook: File → Options → Mail → Signatures → New → paste → OK.</p></div>
+  </div></div>
+</main>
+<div class="no-print mx-auto max-w-6xl px-4 sm:px-6 pb-4" role="complementary" aria-label="Advertisement">
+  <div class="mx-auto text-center" style="max-width:728px">
+    <span class="block text-[10px] tracking-[0.18em] uppercase text-slate-400 mb-1.5">Advertisement</span>
+    <div class="flex justify-center overflow-hidden">
+      <script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="464498"></script>
+    </div>
+  </div>
+</div>
+<section class="mx-auto max-w-4xl px-4 sm:px-6 pb-6">
+  <article>
+  <h2>The hardest-working line of your professional life</h2>
+<p>You write your email signature zero times and send it a thousand times. It closes job applications, invoices, introductions and apologies, and it is frequently the only designed object a new contact ever sees from you. A clean signature quietly testifies: this person is real, reachable, and attached to something organised. A messy one — a scanned image, a paragraph of disclaimers, a rainbow of fonts — testifies otherwise, at the exact moment you are asking to be trusted. SignCraft's premise is that building the good kind should take ninety seconds, cost nothing, and survive being pasted into the two clients that dominate working life: Gmail and Outlook.</p>
+<p>The generator produces table-based HTML under the hood, which is not retro fussiness but hard-won email reality: mail clients strip modern CSS with enthusiasm, and nested tables remain the only layout technology every client from Outlook 2007 to a phone's stock app renders identically. You never see that machinery — you fill six fields, pick a temperament, and copy. The machinery is the point.</p>
+<h2>Three templates, three temperaments</h2>
+<p>Modern puts a confident colour bar beside a bold name — the signature of agencies, startups and anyone whose work is visual. Classic pairs a serif name with a ruled line and an accent divider: law, finance, academia and consulting, where restraint is the brand. Minimal is pure text — name, role, one contact line — for people whose reputation travels ahead of them and for technical audiences who distrust decoration on principle. None is 'best'; each is a claim about who is writing, and mismatches are felt instantly: a rainbow signature on a firm of solicitors reads like a typo in a contract.</p>
+<p>Whichever you choose, the field discipline is the same and deliberately strict: name, title, company, then at most three contact routes — email (already known, but needed for forwarding), one phone, one website. Every additional line — a second phone, a fax (a fax!), a motivational quotation, four social badges — dilutes all the others. A signature is an index card, not a brochure.</p>
+<h2>Installing: the two paths that cover the world</h2>
+<p>Gmail accepts rich text directly: copy the rendered signature from the preview — the Copy Signature button selects it as formatted content, not code — then paste it into Settings → See all settings → General → Signature, assign it as the default for new mail and replies, and save at the page's very bottom, where Gmail hides the button out of what can only be tradition. Outlook on the web follows the same paste logic through Settings → Mail → Compose and reply; the desktop app wants File → Options → Mail → Signatures. Per-template steps are printed beside the preview because the paste is the easy part and the finding of the setting is the actual boss fight.</p>
+<p>Two installation traps catch everyone once. First, signatures do not travel: set yours on every client you send from — web, desktop and phone apps each keep their own, and the phone's default 'Sent from my…' line is a placeholder, not a signature. Second, test by emailing yourself and a friend on a different client: check the layout, then check it again in the reply, because reply signatures are a separate default in both Gmail and Outlook and are forever being forgotten.</p>
+<h2>What to leave out, and why</h2>
+<p>Images are the classic overreach: logo images break when clients block remote pictures (many do by default), arrive as attachments that imply you sent a file, and cannot be read by screen readers or searched by recipients hunting your number. These templates are text-only by design — selectable, copyable, forever loadable. Legal disclaimers deserve the same scepticism: a paragraph of confidentiality boilerplate under a two-line email has never once stopped a misdirected message being read, and mail admins, not signatures, are where organisations actually enforce policy. If your employer mandates one, that is their template to give you.</p>
+<p>Also leave out: your full postal address unless clients visit you, pronouns unless your organisation's norm includes them (then include them cleanly in the title line), and any link you would not want clicked — because it will be, by the curious, mid-negotiation. One website, your best one. The signature's scarcity is its authority.</p>
+<h2>Signatures for freelancers, founders and job-seekers</h2>
+<p>If you are the company, the signature is the company: use the business name in the company field even if it is just you, and let the website carry the portfolio your signature cannot. A booking or contact link can replace the generic website when appointments are the goal. Job-seekers should match the signature to the CV's typography family and keep the title aspirational-but-true — your current role or target function, never an invented seniority; recruiters forward emails, and signatures are read by everyone in the chain.</p>
+<p>Review the signature at every role change and at least yearly otherwise: stale titles in signatures are shockingly common because we read our own least. While you are here, generate the new one, install it on all three clients, and send the test mail. Ninety seconds, a thousand impressions upgraded.</p>
+<h2>The quiet etiquette of not over-signing</h2>
+<p>One final craft note: the signature should appear once in a thread's visible flow, which modern clients mostly handle, and it should never be longer than the typical message it closes. If your emails are usually two lines and your signature is nine, the tail is wagging the correspondence. Choose the template that matches your message length as much as your industry — minimal for the terse, classic or modern when your emails carry proposals and weight. Then stop thinking about it, which is the true product: a professional constant, set once, working forever.</p>
+<h2>One signature, every device: the rollout checklist</h2>
+<p>Roll a new signature out like a tiny product launch. Generate it, then install in this order: the client you send from most, then webmail, then the phone app, then any CRM or helpdesk that sends in your name. Send a test from each to a personal address and read them on a phone — the device your recipients most likely use — checking that lines wrap gracefully and links are tappable. Finally, search your sent folder a week later: signatures drift when colleagues reply-all with yours embedded and settings get 'helpfully' reset by updates.</p>
+<p>Keep the copied HTML somewhere durable — a note, a doc — because the day you replace a laptop is the day you will not want to rebuild the signature from memory. Ninety seconds now, or nine minutes of archaeology later: the checklist exists so it stays ninety seconds forever.</p>
+<h2>Signatures inside teams: consistency without drabness</h2>
+<p>Organisations face a tension individuals do not: every signature slightly different reads as chaos, every signature identical reads as control. The settled middle is a shared template with personal fields — same structure, same typeface, same accent colour; the name, title and one contact route are the person's own. SignCraft's templates were designed to be adopted that way: agree the template at team level, let each member generate their own in a minute, and brand consistency stops depending on a circulated Word document from 2019 that half the company has quietly edited. Review the fleet yearly, alongside the website footer it should resemble — the two are read as one identity.</p>
+  <h2>Frequently Asked Questions</h2>
+  <details class="faq"><summary>How do I add the signature to Gmail?</summary><p>Click 'Copy signature', then in Gmail: Settings → See all settings → General → Signature → Create new → paste → assign as default for new emails and replies → Save Changes at the bottom of the page.</p></details>
+<details class="faq"><summary>How do I add it to Outlook?</summary><p>On the web: Settings → Mail → Compose and reply → paste into the signature editor and set defaults. In desktop Outlook: File → Options → Mail → Signatures → New → paste → set as default → OK.</p></details>
+<details class="faq"><summary>Why does the generator use HTML tables?</summary><p>Email clients strip most modern CSS; table-based layout with inline styles is the only approach that renders consistently across Gmail, Outlook (including old desktop versions) and mobile mail apps.</p></details>
+<details class="faq"><summary>Should my signature include a logo or photo?</summary><p>Text signatures load instantly, never arrive as mystery attachments, work with images blocked, and stay copyable and accessible. If branding demands a logo, keep it small, hosted and linked — but text-only is the reliable default.</p></details>
+<details class="faq"><summary>Can I copy the raw HTML instead?</summary><p>Yes — 'Copy HTML code' gives you the markup for mail tools, CRMs and clients that accept signature code directly, or for handing to your IT team.</p></details>
+<details class="faq"><summary>Do I need to set the signature on my phone too?</summary><p>Yes — each app keeps its own signature setting and they do not sync. Replace the default 'Sent from my phone' line in your mail app's settings with the same signature for a consistent impression.</p></details>
+  </article>
+</section>
+<footer class="mt-6 py-8" style="background:#172554;color:#EFF6FF">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 text-center text-sm">
+    <p class="font-bold text-base">SignCraft</p>
+    <p class="opacity-80 mt-1">Free email signature generator. Fill your details, pick a template, copy the signature or the HTML, and install it in Gmail or Outlook with step-by-step guides for each template.</p>
+    <p class="mt-2"><a href="#top" class="underline">Home</a> · <a href="https://fixoraa.tech" class="underline">More Tools</a></p>
+    <p class="fx-credit" style="text-align:center;font-size:12.5px;opacity:.62;margin:10px auto 2px;letter-spacing:.01em">Made by <a href="https://fixoraa.tech" target="_blank" rel="noopener" style="color:inherit;font-weight:700;text-decoration:underline;text-underline-offset:2px">Fixoraa</a></p>
+  </div>
+</footer>
+<script>
+
+function v(id){return document.getElementById(id).value.trim();}
+function sigHTML(){
+  var nm=v('nm'),ti=v('ti'),co=v('co'),em=v('em'),ph=v('ph'),wb=v('wb'),tpl=document.getElementById('tpl').value;
+  var site=wb?('https://'+wb.replace(/^https?:\/\//,'')):''; var wlink=wb?('<a href="'+site+'" style="color:#1E40AF;text-decoration:none">'+wb+'</a>'):'';
+  if(tpl==='classic')return '<table cellpadding="0" cellspacing="0" style="font-family:Georgia,serif;color:#1f2937"><tr><td><div style="font-size:19px;font-weight:bold">'+nm+'</div><div style="font-style:italic;color:#6b7280">'+ti+(co?' · '+co:'')+'</div><div style="border-top:2px solid #F97316;margin:8px 0"></div><div style="font-size:13px">'+em+(ph?'<br>'+ph:'')+(wb?'<br>'+wlink:'')+'</div></td></tr></table>';
+  if(tpl==='minimal')return '<div style="font-family:Arial,sans-serif;color:#111827;font-size:14px"><b>'+nm+'</b>'+(ti?' — '+ti:'')+(co?' · '+co:'')+'<br><span style="color:#4b5563;font-size:13px">'+em+(ph?' · '+ph:'')+(wb?' · '+wlink:'')+'</span></div>';
+  return '<table cellpadding="0" cellspacing="0" style="font-family:Arial,sans-serif;color:#111827"><tr><td style="border-left:5px solid #1E40AF;padding-left:12px"><div style="font-size:18px;font-weight:bold;color:#1E40AF">'+nm+'</div><div style="font-size:13px;color:#374151">'+ti+(co?' · '+co:'')+'</div><div style="font-size:13px;color:#6b7280;margin-top:5px">'+em+(ph?' · '+ph:'')+(wb?'<br>'+wlink:'')+'</div></td></tr></table>';
+}
+function render(){document.getElementById('prev').innerHTML=sigHTML();}
+function copySig(){
+  var prev=document.getElementById('prev'); var range=document.createRange(); range.selectNode(prev); var sel=window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+  try{document.execCommand('copy'); document.getElementById('msg').textContent='✅ Signature copied as rich text — paste it directly into Gmail or Outlook signature settings.';}catch(e){document.getElementById('msg').textContent='Select the preview and copy manually, or use Copy HTML.';}
+  sel.removeAllRanges();
+}
+function copyHtml(){if(navigator.clipboard)navigator.clipboard.writeText(sigHTML());document.getElementById('msg').textContent='✅ HTML copied — use it in mail clients or tools that accept signature code.';}
+render();
+
+</script>
+</body>
+</html>
